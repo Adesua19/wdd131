@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: o;
+    padding: 0;
 }
 
 :root {
@@ -61,7 +61,7 @@ main {
 h1 {
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .card-container {
@@ -131,7 +131,7 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.9;
+    font-size: 0.9rem;
 }
 
 footer p {
