@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+}
+
+:root {
+    --dark-navy: #002147;
+    --text-color: #222222;
+    --bg-light: #f4f6f9;
+    --card-bg: #ffffff;
+    --border-color: #d1d5db;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-navy);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+nav a {
+    color: var(--dark-navy);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: var(--dark-navy);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 0.75rem 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.1rem;
+    background-color: var(--dark-navy);
+    color: #ffffff;
+}
+
+.card-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.location-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card img {
+    border-radius: 4px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.card ul {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+
+.card a {
+    text-decoration: underline;
+}
+
+.card-content p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+footer {
+    background-color: var(--dark-navy);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
