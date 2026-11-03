@@ -3,4 +3,4 @@ const today = new Date();
 currentYearSpan.textContent = today.getFullYear();
 
 const lastModifiedParagraph = document.querySelector("#lastModified");
-lastModifiedParagraph = `Last Modification: ${ document.lastModified }`;
+lastModifiedParagraph.textContent = `Last Modification: ${document.lastModified}`;
