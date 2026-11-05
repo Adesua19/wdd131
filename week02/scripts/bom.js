@@ -10,7 +10,7 @@ buttonElement.addEventListener("click", function () {
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "❌";
         deleteBtn.setAttribute("aria-label", "Remove chapter");
-        
+
         deleteBtn.addEventListener("click", function () {
             listElement.removeChild(li);
             inputElement.focus();
