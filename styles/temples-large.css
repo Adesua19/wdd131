@@ -1,6 +1,6 @@
-@media (min-width: 48em) {
+@media (min-width: 37.5em) {
     header {
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
     }
 
     #menu {
@@ -21,6 +21,10 @@
     .navigation a {
         padding: 0.5rem 1rem;
         font-size: 0.95rem;
+    }
+    
+    main {
+        max-width: 1000px;
     }
 
     .gallery {
