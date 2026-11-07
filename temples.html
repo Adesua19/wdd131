@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temple Album</title>
+    <meta name="description"
+        content="Temple Album page for Leonie Effodu's WDD 131 Dynamic Web Fundamentals course project, showcasing images and information about various temples.">
+    <meta name="author" content="Leonie Effodu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
-    
+
+
+    <header>
+        <h1>Temple Album</h1>
+
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+            <div class="gallery">
+                <figure>
+                    <img src="images/historicSaltLake.jpg" alt=" Historic Salt Lake City Temple" load="lazy">
+                    <figcaption>Historic Salt Lake City Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanDiegoCalifornia.jpg" alt="San Diego California Temple" load="lazy">
+                    <figcaption>San Diego California Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanLuisPotosíMexico.jpg" alt="San Luis Potosí Mexico Temple" load="lazy">
+                    <figcaption>San Luis Potosí Mexico Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SpanishFork_Utah.jpg" alt="Spanish-Fork Utah Temple" load="lazy">
+                    <figcaption>Spanish-Fork Utah Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Teresina_Brazil.jpg" alt="Teresina Brazil Temple" load="lazy">
+                    <figcaption>Teresina Brazil Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/VictoriaBritishColumbia.jpg" alt="Victoria British Columbia Temple" load="lazy">
+                    <figcaption>Victoria British Columbia Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanDiegoCalifornia.jpg" alt="San Diego California Temple" load="lazy">
+                    <figcaption>San Diego California Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanDiegoCalifornia.jpg" alt="San Diego California Temple" load="lazy">
+                    <figcaption>San Diego California Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanDiegoCalifornia.jpg" alt="San Diego California Temple" load="lazy">
+                    <figcaption>San Diego California Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/SanDiegoCalifornia.jpg" alt="San Diego California Temple" load="lazy">
+                    <figcaption>San Diego California Temple</figcaption>
+                </figure>
+            </div>
+        </main>
+
+
+    </header>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Leonie Effodu | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
