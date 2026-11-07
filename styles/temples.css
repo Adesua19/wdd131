@@ -56,7 +56,6 @@ nav {
     left: 0;
     width: 100%;
     background-color: var(--primary-color);
-    display: none;
     z-index: 10;
 }
 
