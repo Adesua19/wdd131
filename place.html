@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>W03 Assignment: Nigeria - Country Page | Effodu Leonie Adesua</title>
+    <meta name="description"
+        content="Explore Nigeria's geography, data, and current weather conditions including wind chill calculations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main class="hero-container">
+
+<picture>
+    <source srcset="images/nigeria_large.webp" media="(min-width: 1000px)">
+    <source srcset="images/nigeria_medium.webp" media="(min-width: 500px)">
+    <img src="images/nigeria_small.webp" alt="View of Nigeria" width="1500" height="750">
+</picture>  
+
+<div class="content-grid">
+    <section class="card data">
+        <h2>Data</h2>
+        <ul>
+            <li><span>Area:</span> 923,768 sq km</li>
+            <li><span>Population:</span> 223 million</li>
+            <li><span>Capital:</span> Abuja</li>
+            <li><span>Language:</span>English, Hausa, Igbo, Yoruba</li>
+            <li><span>Currency:</span> Nigerian Naira(NGN)</li>
+            <li><span>Time Zone:</span> WAT (UTC+1)</li>
+        </ul>
+    </section>
+
+    <section class="card weather">
+        <h2>Weather <span id="weather-icon-desktop" class="desktop-emoji">🌤️</span></h2>
+        <div class="weather-content">
+            <img src="" alt="Weather Icon" class="mobile=svg-icon">
+            <ul>
+                <li><span>Temperature:</span> <span id="temp">30</span> °C</li>
+                <li><span>Conditions:</span>Partly Cloudy</li>
+                <li><span>Wind:</span> <span id="wind">10</span> km/h</li>
+                <li><span>Wind Chill:</span> <span id="windchill">N/A</span></li>
+            </ul>
+        </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Effodu Leonie Adesua 🌸 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

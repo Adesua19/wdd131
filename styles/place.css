@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #008751;
+    /* Nigerian Green */
+    --secondary-color: #ffffff;
+    --dark-text: #222222;
+    --light-bg: #f4f7f6;
+    --card-bg: #ffffff;
+    --border-color: #dcdcdc;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+header h1 {
+    font-size: 2.2rem;
+}
+.hero-container {
+    position: relative;
+    max-width: 1500;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.hard h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.3rem;
+}
+.card ul {
+    list-style: none;
+}
+.card li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+.card li span {
+    font-weight: 700;
+}
+.mobile-svg-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.destop-emoji {
+    display: none;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+@media (min-width: 768px {
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: 2rem;
+        right: 2rem;
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(4px);
+    }
+    .mobile-svg-icon {
+        display: none;
+    }
+    .desktop-emoji {
+        display: inline;
+    }
+    .card.weather h2::after {
+        content: "🌤️";
+    }
+    #weather-icon-desktop {
+        display: none;
+    }
+}
