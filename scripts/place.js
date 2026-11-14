@@ -6,6 +6,10 @@ if (currentYearSpan) {
     currentYearSpan.textContent = today.getFullYear();
 }
 
+if (lastModifiedParagraph) {
+    lastModifiedParagraph.textContent = document.lastModified;
+}
+
 const temperatureElement = document.querySelector("#temp")
 const windSpeedElement = document.querySelector("#wind")
 const windChillElement = document.querySelector("#windchill")

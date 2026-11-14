@@ -24,44 +24,45 @@
 
     <main class="hero-container">
 
-<picture>
-    <source srcset="images/nigeria_large.webp" media="(min-width: 1000px)">
-    <source srcset="images/nigeria_medium.webp" media="(min-width: 500px)">
-    <img src="images/nigeria_small.webp" alt="View of Nigeria" width="1500" height="750">
-</picture>  
+        <picture class="hero">
+            <source srcset="images/nigeria_large.webp" media="(min-width: 1000px)">
+            <source srcset="images/nigeria_medium.webp" media="(min-width: 500px)">
+            <img src="images/nigeria_small.webp" alt="Landscape view of Nigeria" width="1200" height="600">
+        </picture>  
 
-<div class="content-grid">
-    <section class="card data">
-        <h2>Data</h2>
-        <ul>
-            <li><span>Area:</span> 923,768 sq km</li>
-            <li><span>Population:</span> 223 million</li>
-            <li><span>Capital:</span> Abuja</li>
-            <li><span>Language:</span>English, Hausa, Igbo, Yoruba</li>
-            <li><span>Currency:</span> Nigerian Naira(NGN)</li>
-            <li><span>Time Zone:</span> WAT (UTC+1)</li>
-        </ul>
-    </section>
+        <div class="content-grid">
+            <section class="card data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span>Area:</span> 923,768 sq km</li>
+                    <li><span>Population:</span> 223 million</li>
+                    <li><span>Capital:</span> Abuja</li>
+                    <li><span>Language:</span>English, Hausa, Igbo, Yoruba</li>
+                    <li><span>Currency:</span> Nigerian Naira(NGN)</li>
+                    <li><span>Time Zone:</span> WAT (UTC+1)</li>
+                    <li><span>Calling Code:</span> +234</li>
+                </ul>
+            </section>
 
-    <section class="card weather">
-        <h2>Weather <span id="weather-icon-desktop" class="desktop-emoji">🌤️</span></h2>
-        <div class="weather-content">
-            <img src="images/weather.svg" alt="Weather Icon" class="mobile=svg-icon">
-            <ul>
-                <li><span>Temperature:</span> <span id="temp">30</span> °C</li>
-                <li><span>Conditions:</span>Partly Cloudy</li>
-                <li><span>Wind:</span> <span id="wind">10</span> km/h</li>
-                <li><span>Wind Chill:</span> <span id="windchill">N/A</span></li>
-            </ul>
-        </div>
+        <section class="card weather">
+            <h2>Weather <span id="weather-icon-desktop" class="desktop-emoji">🌤️</span></h2>
+            <div class="weather-content">
+                <img src="images/weather.svg" alt="Weather Icon" class="mobile=svg-icon">
+                <ul>
+                    <li><span>Temperature:</span> <span id="temp">30</span> °C</li>
+                    <li><span>Conditions:</span>Partly Cloudy</li>
+                    <li><span>Wind:</span> <span id="wind">10</span> km/h</li>
+                    <li><span>Wind Chill:</span> <span id="windchill">N/A</span></li>
+                    
+                </ul>
+            </div>
             </section>
         </div>
     </main>
 
     <footer>
         <p>&copy;<span id="currentyear"></span> 🌸 Effodu Leonie Adesua 🌸 Nigeria</p>
-        <p id="lastModified"></p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
-
 </html>
