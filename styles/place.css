@@ -125,7 +125,76 @@ h2 {
     display: none;
 }
 
-@media (min-width: 8000px) {
+@media (min-width: 1000px) {
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        height: 560px;
+        object-fit: cover;
+    }
+
+    /* The grid sits on top of the image and pushes the cards to opposite corners */
+    .content-grid {
+        position: absolute;
+        inset: 0;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        pointer-events: none;
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        padding: 0 0 1rem;
+        text-align: left;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        pointer-events: auto;
+    }
+
+    .card+.card {
+        border-top: none;
+    }
+
+    .data {
+        align-self: flex-start;
+        width: 310px;
+        margin-top: 0;
+    }
+
+    .weather {
+        align-self: flex-end;
+        width: 270px;
+    }
+
+    .card h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0.75rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--green);
+        color: var(--white);
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card ul {
+        padding: 0 1rem;
+        max-width: none;
+    }
+
+    .weather-content>img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "🌤️";
+    }
+}@media (min-width: 8000px) {
     .hero-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -153,7 +222,6 @@ h2 {
         text-align: left;
         border-radius: 4px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-        pointer-events: auto;
     }
 
     .card+.card {
