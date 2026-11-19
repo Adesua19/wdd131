@@ -144,10 +144,12 @@ h2 {
         margin: 0 auto;
     }
 
-    .hero img {
-        height: 560px;
-        object-fit: cover;
-    }
+.hero img {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+}
 
     .content-grid {
         position: absolute;
