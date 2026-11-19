@@ -81,6 +81,19 @@ footer p {
     object-fit: cover;
     object-position: center center;
 }
+picture {
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+picture img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  float: none;
+}
 
 .content-grid {
     display: block;
